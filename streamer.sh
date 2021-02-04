@@ -6,8 +6,6 @@
 #   Drawtext makes it a little slow. Delete drawtext for better performance.
 #   Change below values according your needs.
 
-
-
 yttoken="your-token-here"                   # string. Youtube token fore live videos.
 pll="/path/to/playlist.txt"                 # string. Path to playlist file
 
