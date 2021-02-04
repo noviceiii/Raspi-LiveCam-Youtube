@@ -1,0 +1,4 @@
+ffconcat version 1.0
+file /path/to/mp3-file_1.mp3
+file /path/to/mp3-file_2.mp3
+file /path/to/mp3-file_n.mp3
