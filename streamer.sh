@@ -17,8 +17,8 @@ b=6000000                                   # int. Bit rate to be uses for input
 # -----------------------------------------------------------------------------------------------------
 
 raspivid -o - -t 0 -vf -hf -fps $r -b $b | \
-sudo ffmpeg -stream_loop -1 -safe 0 -i $pll \
--f h264 -i - -strict experimental \
+ffmpeg -stream_loop -1 -safe 0 -i $pll \
+-f h264 -i - -vcodec copy -acodec aac -ab 128k -g 50 -strict experimental \
 -f flv rtmp://a.rtmp.youtube.com/live2/$yttoken
 
 
