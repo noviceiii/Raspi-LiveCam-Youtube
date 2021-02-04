@@ -10,6 +10,10 @@ Requirements:
   -> go to your channel
   -> click "create live stream"
   
+It works fine now on a raspy pi 4 with more than 2GB RAM and the given parameters but has its limitations regarding speed.
+If you really want to increase speed, remove -vf drawtext... because ffmpeg needs to convert the video stream as long as you have drawtext in it.
+Furthter, to avoid speed issues, go with a music codec that doesn't need to be converted (acodec copy) such as mp3.
+  
 Overlay.txt:
 Add any text you want. It will written over the video.
 Be carefull with special chars. I haven't extensively tested it yet but I guess it might have issues with special chars.
